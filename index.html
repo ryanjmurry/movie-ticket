@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/master.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/master.js"></script>
+    <meta charset="utf-8">
+    <title>Fandongo</title>
+  </head>
+  <body>
+    <div class="container">
+    <h1>Welcome to Fondongo!</h1>
+    <p> $10 per Ticket </p>
+    <p> * Early Releases +$5.00</p>
+    <p> * Matinee's 50% Off (after discount applied) </p>
+    <form id="movie-ticket">
+      <div class="form-group">
+        <label for="movies">Movies</label>
+        <select id="movies">
+          <option value="Ready Player One"><span class="notice-text">Early Release: </span>Ready Player One</option>
+          <option value="A Beautiful Day"><span class="notice-text">Early Release: </span>A Beautiful Day</option>
+          <option value="Black Panther">Black Panther (PG-13)</option>
+          <option value="Tomb Raider">Tomb Raider (PG-13)</option>
+          <option value="Game Night">Game Night (PG-13)</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="times">Showtimes</label>
+        <select id="times">
+          <option value="10:00 AM"><span class="notice-text">Matinee: </span>10:00 am</option>
+          <option value="1:00 PM"><span class="notice-text">Matinee: </span>1:00 pm</option>
+          <option value="4:00 PM">4:00 pm</option>
+          <option value="7:00 PM">7:00 pm</option>
+          <option value="10:00 PM">10:00 pm</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="discounts">Discounts</label>
+        <select id="discounts">
+          <option value="0">None</option>
+          <option value="5">Veteran Discount ($5.00 Off)</option>
+          <option value="3">Over 60 Discount ($3.00 Off)</option>
+          <option value="2">Student Discount ($2.00 Off)</option>
+        </select>
+      </div>
+      <button type="submit" id="button" class="btn btn-primary">Proceed to Checkout</button>
+    </form>
+    <div id="ticket-information">
+      <br>
+      <h1>Movie Details</h1>
+      <br>
+      <h2>Movie: <span id="movie-name"></span></h2>
+      <br>
+      <h2>Time: <span id="movie-time"></span></h2>
+      <br>
+      <h2>Price: $<span id="movie-price"></span></h2>
+    </div>
+  </body>
+</html>
