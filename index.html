@@ -10,26 +10,35 @@
   </head>
   <body>
     <div class="container">
+    <div class="jumbotron">
     <h1>Welcome to Fondongo!</h1>
-    <p> $10 per Ticket </p>
-    <p> * Early Releases +$5.00</p>
-    <p> * Matinee's 50% Off (after discount applied) </p>
+    <p>$10 per ticket</p>
+    <p>Daily Discounts!</p>
+    <p>Early Releases $5 extra</p>
+    <p>Matinee's 50% off (after discount is applied)</p>
+    </div>
     <form id="movie-ticket">
       <div class="form-group">
         <label for="movies">Movies</label>
         <select id="movies">
-          <option value="Ready Player One"><span class="notice-text">Early Release: </span>Ready Player One</option>
-          <option value="A Beautiful Day"><span class="notice-text">Early Release: </span>A Beautiful Day</option>
-          <option value="Black Panther">Black Panther (PG-13)</option>
-          <option value="Tomb Raider">Tomb Raider (PG-13)</option>
-          <option value="Game Night">Game Night (PG-13)</option>
+          <option value="No Movie Selected"></option>
+          <option class="ratedPG13" value="Ready Player One">Early Release: Ready Player One (PG-13)</option>
+          <option class="ratedPG" value="Sherlock Gnomes">Early Release: Sherlock Gnomes (PG)</option>
+          <option class="ratedPG13" value="Black Panther">Black Panther (PG-13)</option>
+          <option class="ratedR" value="Annihilation">Annihilation (R)</option>
+          <option class="ratedPG13" value="Tomb Raider">Tomb Raider (PG-13)</option>
+          <option class="ratedPG" value="Peter Rabbit">Peter Rabbit (PG)</option>
+          <option class="ratedR" value="The Strangers: Prey at Night">The Strangers: Prey at Night (R)</option>
+          <option class="ratedPG13" value="Jumanji: Welcome to the Jungle">Jumanji: Welcome to the Jungle (PG-13)</option>
+          <option class="ratedR" value="Game Night">Game Night (R)</option>
         </select>
       </div>
       <div class="form-group">
         <label for="times">Showtimes</label>
         <select id="times">
-          <option value="10:00 AM"><span class="notice-text">Matinee: </span>10:00 am</option>
-          <option value="1:00 PM"><span class="notice-text">Matinee: </span>1:00 pm</option>
+          <option value="No Time Selected"></option>
+          <option value="10:00 AM">Matinee: 10:00 am</option>
+          <option value="1:00 PM">Matinee: 1:00 pm</option>
           <option value="4:00 PM">4:00 pm</option>
           <option value="7:00 PM">7:00 pm</option>
           <option value="10:00 PM">10:00 pm</option>

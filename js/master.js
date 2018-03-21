@@ -27,13 +27,26 @@ Ticket.prototype.Price = function() {
 
 //UI Logic
 $(document).ready(function() {
+  var age = parseInt(prompt("Please Enter your age:"));
+  if (age < 17) {
+    $(".ratedR").hide();
+  }
+  if (age < 13) {
+    $(".ratedR").hide();
+    $(".ratedPG13").hide();
+  }
   $("form#movie-ticket").submit(function() {
     event.preventDefault();
     var movie = $("#movies").val();
     var time = $("#times").val();
     var discount = parseInt($("#discounts").val());
     var newTicket = new Ticket(movie, time, discount);
-    var price = newTicket.Price();
+    if (newTicket.movie === "No Movie Selected" || newTicket.time === "No Time Selected") {
+      alert("Please select a movie and/or a time");
+    } else {
+      var price = newTicket.Price();
+    }
+
 
   $("#ticket-information").show();
   $("#movie-name").text(newTicket.movie);
